@@ -2,7 +2,7 @@ name: Crawl
 
 on:
   schedule:
-    - cron: '0 4 * * *'
+    - cron: '15 15 * * *'
 
 jobs:
   cron:
