@@ -44,7 +44,7 @@ const getRecentChart = async () => {
     });
 
     // Return the finished chart object
-    return { date, data: chart };
+    return chart;
 };
 
 module.exports = { getRecentChart };
