@@ -13,9 +13,11 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Install dependencies
+        working-directory: ./crawl
         run: npm install
 
       - name: Run crawler
+        working-directory: ./crawl
         run: npm crawl
 
       - name: Get current date
