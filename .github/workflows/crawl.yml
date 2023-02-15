@@ -1,0 +1,28 @@
+name: Crawl
+
+on:
+  schedule:
+    - cron: '0 4 * * *'
+
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    container: node:18
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run crawler
+        run: npm crawl
+
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+
+      - name: Add & Commit
+        uses: EndBug/add-and-commit@v9.0.0
+        with:
+          author_name: Crawler
+          message: 'Crawled on ${{ steps.date.outputs.date }}'

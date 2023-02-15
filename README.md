@@ -1,0 +1,71 @@
+# Historic Billboard Hot 100
+
+JSON files for every Billboard Hot 100 chart in history, updated daily.
+
+## Get the Most Recent Chart
+
+To get the current Billboard Hot 100 chart, use the following URL:
+
+```html
+https://raw.githubusercontent.com/mhollingshead/billboard-hot-100/main/recent.json
+```
+
+The JSON data will be a single [chart object](#chart-object).
+
+## Get a Specific Chart
+
+To get the Billboard Hot 100 chart during a specific week, use the following URL:
+
+```html
+https://raw.githubusercontent.com/mhollingshead/billboard-hot-100/main/date/<DATE>.json
+```
+
+where `<DATE>` is a **valid release date** (formatted `YYYY-MM-DD`). The JSON data will be a single [chart object](#chart-object).
+
+### Valid Release Dates
+
+You can use [`valid_dates.json`](https://raw.githubusercontent.com/mhollingshead/billboard-hot-100/main/valid_dates.json) to get a list of all valid release dates.
+
+## Get All Charts
+
+To get all Billboard Hot 100 charts, use the following URL:
+
+```html
+https://raw.githubusercontent.com/mhollingshead/billboard-hot-100/main/all.json
+```
+
+The JSON data will be an array of [chart objects](#chart-object).
+
+## Data
+
+All JSON files contain either single **chart objects** or arrays of **chart objects**.
+
+### Chart Object
+
+```javascript
+{
+    "date": String,
+    "data": [
+        {
+            "song": String,
+            "artist": String,
+            "this_week": Number,
+            "last_week": Number || null,
+            "peak_position": Number,
+            "weeks_on_chart": Number
+        },
+        ...
+    ]
+}
+```
+
+| Attribute | Type | Description |
+| --- | --- | --- |
+| `date` | `String` | The chart's release date (formatted `YYYY-MM-DD`). |
+| `data` | `Array<Object>` | The chart's data, an array of 100 **song objects**. |
+| **song object**.`song` | `String` | The song's title. |
+| **song object**.`artist` | `String` | The song's artist. |
+| **song object**.`this_week` | `Number` | The song's current chart position. |
+| **song object**.`last_week` | `Number` \| `null` | The song's chart position during the previous week. |
+| **song object**.`peak_position` | `Number` | The song's peak chart position during any week. |
+| **song object**.`weeks_on_chart` | `Number` | The number of weeks that the song has been on the chart. |
