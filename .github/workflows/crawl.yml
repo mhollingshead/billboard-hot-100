@@ -11,6 +11,7 @@ jobs:
     container: node:18
     steps:
       - uses: actions/checkout@v3
+      - run: git config --global --add safe.directory /__w/billboard-hot-100/billboard-hot-100
 
       - name: Install dependencies
         working-directory: ./crawl
@@ -25,7 +26,7 @@ jobs:
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
 
       - name: Add & Commit
-        uses: EndBug/add-and-commit@v9.0.0
+        uses: EndBug/add-and-commit@v9
         with:
           author_name: Crawler
           message: 'Crawled on ${{ steps.date.outputs.date }}'
