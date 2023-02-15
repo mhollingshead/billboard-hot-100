@@ -1,8 +1,9 @@
 name: Crawl
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '15 15 * * *'
+    - cron: '0 4 * * *'
 
 jobs:
   cron:
