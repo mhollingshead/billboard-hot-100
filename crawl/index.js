@@ -6,8 +6,6 @@ const { getRecentChart } = require('./utils');
     // Get the recent chart
     const recent = await getRecentChart();
 
-    console.log(recent);
-
     // Update recent.json
     fs.writeFileSync(`${dir}/recent.json`, JSON.stringify(recent));
     // Create or update date/<DATE>.json

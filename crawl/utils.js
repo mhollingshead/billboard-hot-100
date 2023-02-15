@@ -4,7 +4,12 @@ const cheerio = require('cheerio');
 // Remove tab or newline characters from text nodes
 const clean = html => html.replace(/\n/g, '').replace(/\t/g, '');
 // Format dates to YYYY-MM-DD
-const formatDate = date => date.toLocaleDateString('en-CA');
+const formatDate = date => {
+    date = date.toLocaleDateString().split('/');
+    if (date[0].length === 1) date[0] = `0${date[0]}`;
+    if (date[1].length === 1) date[1] = `0${date[1]}`;
+    return `${date[2]}-${date[0]}-${date[1]}`;
+};
 
 const selectors = {
     date: '.chart-results .c-tagline',
