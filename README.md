@@ -1,6 +1,19 @@
-# Historic Billboard Hot 100
 
-JSON files for every Billboard Hot 100 chart in history, updated daily.
+<h1 align="center">
+    <div>Historic Billboard Hot 100 Data</div>
+    <div>
+        <a href="https://github.com/mhollingshead/billboard-hot-100/actions/workflows/crawler.yml"><img src="https://github.com/mhollingshead/billboard-hot-100/actions/workflows/crawler.yml/badge.svg" alt="Crawler" /></a>
+        <a><img src="https://img.shields.io/static/v1?label=Last%20Crawl&message=17%20Feb%202023%2016%3A24%3A18&color=34D058&labelColor=333a41" alt="Last Crawl" /></a>
+        <a href="https://github.com/mhollingshead/billboard-hot-100/tree/main/date"><img src="https://img.shields.io/static/v1?label=Charts&message=3368&color=blue&labelColor=333a41" alt="charts" /></a>
+    </div>
+</h1>
+
+<p align="center">
+    <i>JSON files for every Billboard Hot 100 chart in history, updated daily.</i>
+</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/mhollingshead/billboard-hot-100/main/date/1958-08-04.json">1958-08-04</a> | <a href="https://raw.githubusercontent.com/mhollingshead/billboard-hot-100/main/date/2023-02-18.json">2023-02-18</a>
+</p>
 
 ## Get the Most Recent Chart
 
@@ -36,7 +49,7 @@ https://raw.githubusercontent.com/mhollingshead/billboard-hot-100/main/all.json
 
 The JSON data will be an array of [chart objects](#chart-object).
 
-## Data
+## Schema
 
 All JSON files contain either single **chart objects** or arrays of **chart objects**.
 
