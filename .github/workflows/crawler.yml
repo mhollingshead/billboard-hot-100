@@ -1,4 +1,4 @@
-name: Crawl
+name: Crawler
 
 on:
   workflow_dispatch:

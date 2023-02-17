@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { getRecentChart } = require('./utils');
+const { getRecentChart, getREADME } = require('./utils');
 
 (async () => {
     const dir = '..';
@@ -29,4 +29,7 @@ const { getRecentChart } = require('./utils');
         valid_dates.push(recent.date);
         fs.writeFileSync(`${dir}/valid_dates.json`, JSON.stringify(valid_dates));
     }
+
+    // Update README
+    fs.writeFileSync(`${dir}/README.md`, getREADME(valid_dates));
 })();
