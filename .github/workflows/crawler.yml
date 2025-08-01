@@ -8,7 +8,7 @@ on:
 jobs:
   cron:
     runs-on: ubuntu-latest
-    container: node:18
+    container: node:20
     steps:
       - uses: actions/checkout@v3
       - run: git config --global --add safe.directory /__w/billboard-hot-100/billboard-hot-100
