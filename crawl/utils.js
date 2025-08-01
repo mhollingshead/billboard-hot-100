@@ -12,12 +12,12 @@ const formatDate = date => {
 };
 
 const selectors = {
-    date: '.chart-results .c-tagline',
+    date: '.charts-title .c-span',
     song: 'h3#title-of-a-story',
     artist: 'h3 + span.c-label',
-    last_week: '.o-chart-results-list__item:nth-child(4) > span',
-    peak_position: '.o-chart-results-list__item:nth-child(5) > span',
-    weeks_on_chart: '.o-chart-results-list__item:nth-child(6) > span'
+    last_week: '.a-chart-result-item-container > ul > div > div:nth-child(1) > .o-chart-results-list__item > span',
+    peak_position: '.a-chart-result-item-container > ul > div > div:nth-child(2) > .o-chart-results-list__item > span',
+    weeks_on_chart: '.a-chart-result-item-container > ul > div > div:nth-child(3) > .o-chart-results-list__item > span'
 };
 
 const getRecentChart = async () => {
@@ -26,7 +26,7 @@ const getRecentChart = async () => {
     const $ = cheerio.load(data);
 
     // Extract the chart's date
-    const date = formatDate(new Date($(selectors.date).first().text()));
+    const date = formatDate(new Date($(selectors.date).first().text().replace('Week of ', '')));
 
     // Initialize empty chart object
     const chart = { date, data: [] };
