@@ -3,8 +3,8 @@
     <div>Historic Billboard Hot 100 Data</div>
     <div>
         <a href="https://github.com/mhollingshead/billboard-hot-100/actions/workflows/crawler.yml"><img src="https://github.com/mhollingshead/billboard-hot-100/actions/workflows/crawler.yml/badge.svg" alt="Crawler" /></a>
-        <a><img src="https://img.shields.io/static/v1?label=Last%20Crawl&message=04%20Nov%202025%2004%3A22%3A56&color=34D058&labelColor=333a41" alt="Last Crawl" /></a>
-        <a href="https://github.com/mhollingshead/billboard-hot-100/tree/main/date"><img src="https://img.shields.io/static/v1?label=Charts&message=3509&color=blue&labelColor=333a41" alt="charts" /></a>
+        <a><img src="https://img.shields.io/static/v1?label=Last%20Crawl&message=05%20Nov%202025%2004%3A23%3A43&color=34D058&labelColor=333a41" alt="Last Crawl" /></a>
+        <a href="https://github.com/mhollingshead/billboard-hot-100/tree/main/date"><img src="https://img.shields.io/static/v1?label=Charts&message=3510&color=blue&labelColor=333a41" alt="charts" /></a>
     </div>
 </h1>
 
@@ -12,7 +12,7 @@
     <i>JSON files for every Billboard Hot 100 chart in history, updated daily.</i>
 </p>
 <p align="center">
-    <a href="https://raw.githubusercontent.com/mhollingshead/billboard-hot-100/main/date/1958-08-04.json">1958-08-04</a> | <a href="https://raw.githubusercontent.com/mhollingshead/billboard-hot-100/main/date/2025-11-01.json">2025-11-01</a>
+    <a href="https://raw.githubusercontent.com/mhollingshead/billboard-hot-100/main/date/1958-08-04.json">1958-08-04</a> | <a href="https://raw.githubusercontent.com/mhollingshead/billboard-hot-100/main/date/2025-11-08.json">2025-11-08</a>
 </p>
 
 ## Get the Most Recent Chart
