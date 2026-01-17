@@ -3,7 +3,7 @@
     <div>Historic Billboard Hot 100 Data</div>
     <div>
         <a href="https://github.com/mhollingshead/billboard-hot-100/actions/workflows/crawler.yml"><img src="https://github.com/mhollingshead/billboard-hot-100/actions/workflows/crawler.yml/badge.svg" alt="Crawler" /></a>
-        <a><img src="https://img.shields.io/static/v1?label=Last%20Crawl&message=16%20Jan%202026%2004%3A40%3A20&color=34D058&labelColor=333a41" alt="Last Crawl" /></a>
+        <a><img src="https://img.shields.io/static/v1?label=Last%20Crawl&message=17%20Jan%202026%2004%3A32%3A36&color=34D058&labelColor=333a41" alt="Last Crawl" /></a>
         <a href="https://github.com/mhollingshead/billboard-hot-100/tree/main/date"><img src="https://img.shields.io/static/v1?label=Charts&message=3520&color=blue&labelColor=333a41" alt="charts" /></a>
     </div>
 </h1>
