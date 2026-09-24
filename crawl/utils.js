@@ -15,9 +15,9 @@ const selectors = {
     date: '.charts-title .c-span',
     song: 'h3#title-of-a-story',
     artist: 'h3 + span.c-label',
-    last_week: '.a-chart-result-item-container > ul > div > div:nth-child(1) > .o-chart-results-list__item > span',
-    peak_position: '.a-chart-result-item-container > ul > div > div:nth-child(2) > .o-chart-results-list__item > span',
-    weeks_on_chart: '.a-chart-result-item-container > ul > div > div:nth-child(3) > .o-chart-results-list__item > span'
+    last_week: '.a-chart-result-item-container > ul > li:nth-child(5) > ul > li:nth-child(1) > ul:nth-of-type(1) .o-chart-results-list__item > span',
+    peak_position: '.a-chart-result-item-container > ul > li:nth-child(5) > ul > li:nth-child(1) > ul:nth-of-type(2) .o-chart-results-list__item > span',
+    weeks_on_chart: '.a-chart-result-item-container > ul > li:nth-child(5) > ul > li:nth-child(1) > ul:nth-of-type(3) .o-chart-results-list__item > span'
 };
 
 const getRecentChart = async () => {
